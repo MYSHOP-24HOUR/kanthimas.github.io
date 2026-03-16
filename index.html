@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>ร้านของฉัน</title>
+
+<style>
+
+/* ===== พื้นหลัง ===== */
+body{
+  margin:0;
+  background:#ffd6ec;
+  font-family:-apple-system,BlinkMacSystemFont,sans-serif;
+  display:flex;
+  justify-content:center;
+}
+
+/* ===== กล่องหลัก ===== */
+.container{
+  width:90%;
+  max-width:420px;
+  text-align:center;
+  padding:30px 15px;
+}
+
+/* ===== รูปร้าน ===== */
+.profile{
+  width:110px;
+  height:110px;
+  border-radius:50%;
+  object-fit:cover;
+  box-shadow:0 8px 20px rgba(0,0,0,0.15);
+}
+
+/* ===== ชื่อร้าน ===== */
+h1{
+  color:#ff4fa3;
+  margin:15px 0 25px;
+}
+
+/* ===== ปุ่มสไตล์ iPhone ===== */
+.link{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:12px;
+
+  margin:12px 0;
+  padding:16px;
+
+  border-radius:18px;
+
+  background:rgba(255,255,255,0.75);
+  backdrop-filter:blur(10px);
+
+  text-decoration:none;
+  color:#ff4fa3;
+  font-weight:600;
+
+  box-shadow:
+    0 6px 12px rgba(0,0,0,0.1),
+    inset 0 1px 0 rgba(255,255,255,0.8);
+
+  transition:0.25s;
+}
+
+.link:hover{
+  transform:scale(1.04);
+}
+
+.link:active{
+  transform:scale(0.97);
+}
+
+/* ===== ไอคอน ===== */
+.icon{
+  width:22px;
+  height:22px;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<!-- ===== ใส่รูปร้านตรง src ===== -->
+<img class="profile"
+src="PASTE_SHOP_IMAGE_LINK_HERE">
+
+<h1>🌷 ชื่อร้านของหนู</h1>
+
+<!-- ===== ปุ่มสินค้า ===== -->
+<a class="link" href="product1.html">
+🛍️ สินค้าอย่างที่ 1
+</a>
+
+<a class="link" href="product2.html">
+🛍️ สินค้าอย่างที่ 2
+</a>
+
+<!-- ===== SOCIAL ===== -->
+
+<a class="link" href="PASTE_INSTAGRAM_LINK">
+<img class="icon"
+src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png">
+Instagram
+</a>
+
+<a class="link" href="PASTE_FACEBOOK_LINK">
+<img class="icon"
+src="https://cdn-icons-png.flaticon.com/512/733/733547.png">
+Facebook
+</a>
+
+<a class="link" href="PASTE_LINE_LINK">
+<img class="icon"
+src="https://cdn-icons-png.flaticon.com/512/2111/2111498.png">
+LINE
+</a>
+
+</div>
+
+</body>
+</html>
