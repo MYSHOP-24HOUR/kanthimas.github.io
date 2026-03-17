@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>สินค้า 2</title>
+<title>สินค้า</title>
 
 <style>
 
@@ -22,23 +22,30 @@ body{
   padding:30px 20px;
 }
 
-.product-img{
-  width:100%;
-  border-radius:20px;
-  box-shadow:0 8px 20px rgba(0,0,0,0.15);
-}
-
 h1{
   color:#ff4fa3;
 }
 
-.desc{
-  margin-top:15px;
-  color:#444;
-  line-height:1.6;
+/* ===== กล่องสินค้า ===== */
+.product-card{
+  background:white;
+  border-radius:20px;
+  padding:15px;
+  margin-bottom:20px;
+  box-shadow:0 6px 15px rgba(0,0,0,0.1);
 }
 
-/* ปุ่ม iPhone */
+.product-img{
+  width:100%;
+  border-radius:15px;
+}
+
+.desc{
+  margin-top:10px;
+  color:#444;
+}
+
+/* ===== ปุ่ม ===== */
 .button{
   display:block;
   margin-top:25px;
@@ -49,7 +56,6 @@ h1{
   color:#ff4fa3;
   font-weight:600;
   box-shadow:0 6px 15px rgba(0,0,0,0.1);
-  transition:0.2s;
 }
 
 .button:active{
@@ -63,15 +69,28 @@ h1{
 
 <div class="container">
 
-<!-- ⭐ เปลี่ยนเป็นรูปสินค้า -->
-<img class="product-img" src="663BD7F6-F626-4873-BCE0-819856CFC4B8.jpeg">
+<h1>สินค้า ✨</h1>
 
-<h1>สินค้าอย่างที่ 2</h1>
+<!-- ===== สินค้า 1 ===== -->
+<div class="product-card">
+  <img class="product-img" src="663BD7F6-F626-4873-BCE0-819856CFC4B8.jpeg">
+  <h3>สินค้า 1</h3>
+  <p class="desc">ราคา 199฿ / รายละเอียดสินค้า</p>
+</div>
 
-<p class="desc">
-ใส่รายละเอียดสินค้าได้ตรงนี้<br>
-เช่น ราคา / คุณสมบัติ / โปรโมชัน ✨
-</p>
+<!-- ===== สินค้า 2 ===== -->
+<div class="product-card">
+  <img class="product-img" src="663BD7F6-F626-4873-BCE0-819856CFC4B8.jpeg">
+  <h3>สินค้า 2</h3>
+  <p class="desc">ราคา 259฿ / รายละเอียดสินค้า</p>
+</div>
+
+<!-- ===== สินค้า 3 ===== -->
+<div class="product-card">
+  <img class="product-img" src="663BD7F6-F626-4873-BCE0-819856CFC4B8.jpeg">
+  <h3>สินค้า 3</h3>
+  <p class="desc">ราคา 299฿ / รายละเอียดสินค้า</p>
+</div>
 
 <a class="button" href="index.html">⬅ กลับหน้าหลัก</a>
 
