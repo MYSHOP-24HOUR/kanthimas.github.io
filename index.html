@@ -82,11 +82,9 @@ h1{
   text-decoration:none;
   color:#ff4fa3;
   font-weight:600;
-
   box-shadow:
     0 4px 12px rgba(0,0,0,0.12),
     inset 0 1px 1px rgba(255,255,255,0.7);
-
   transition:0.25s;
 }
 
@@ -111,6 +109,12 @@ h1{
   display:none;
 }
 
+/* ⭐ ลิงก์ครอบการ์ด */
+.card-link{
+  text-decoration:none;
+  color:inherit;
+}
+
 /* ===== การ์ดสินค้า ===== */
 .product-card{
   min-width:220px;
@@ -120,6 +124,7 @@ h1{
   box-shadow:0 8px 20px rgba(0,0,0,0.12);
   scroll-snap-align:center;
   transition:0.25s;
+  cursor:pointer;
 }
 
 .product-card:hover{
@@ -173,23 +178,32 @@ h1{
 
 <div class="product-scroll">
 
-  <div class="product-card">
-    <img src="663BD7F6-F626-4873-BCE0-819856CFC4B8.jpeg">
-    <h3>Sweet Candy</h3>
-    <p class="price">199฿</p>
-  </div>
+  <!-- ⭐ สินค้า 1 -->
+  <a href="product1.html" class="card-link">
+    <div class="product-card">
+      <img src="663BD7F6-F626-4873-BCE0-819856CFC4B8.jpeg">
+      <h3>Sweet Candy</h3>
+      <p class="price">199฿</p>
+    </div>
+  </a>
 
-  <div class="product-card">
-    <img src="663BD7F6-F626-4873-BCE0-819856CFC4B8.jpeg">
-    <h3>Pink Set</h3>
-    <p class="price">259฿</p>
-  </div>
+  <!-- ⭐ สินค้า 2 -->
+  <a href="product2.html" class="card-link">
+    <div class="product-card">
+      <img src="663BD7F6-F626-4873-BCE0-819856CFC4B8.jpeg">
+      <h3>Pink Set</h3>
+      <p class="price">259฿</p>
+    </div>
+  </a>
 
-  <div class="product-card">
-    <img src="663BD7F6-F626-4873-BCE0-819856CFC4B8.jpeg">
-    <h3>Limited Box</h3>
-    <p class="price">299฿</p>
-  </div>
+  <!-- ⭐ สินค้า 3 -->
+  <a href="product3.html" class="card-link">
+    <div class="product-card">
+      <img src="663BD7F6-F626-4873-BCE0-819856CFC4B8.jpeg">
+      <h3>Limited Box</h3>
+      <p class="price">299฿</p>
+    </div>
+  </a>
 
 </div>
 
