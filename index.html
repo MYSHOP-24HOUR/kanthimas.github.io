@@ -6,6 +6,9 @@
 
 <title>Candy Shop</title>
 
+<!-- ⭐ Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Mali:wght@400;600&family=Kanit:wght@400;500&display=swap" rel="stylesheet">
+
 <style>
 
 /* ===== พื้นหลัง Gradient + Glow ===== */
@@ -17,8 +20,7 @@ body{
     #ffeaf6 50%,
     #fff5fb 100%
   );
-  font-family:-apple-system,BlinkMacSystemFont,
-  "Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  font-family:'Kanit', sans-serif;
   text-align:center;
 }
 
@@ -33,6 +35,11 @@ body::before{
   top:-100px;
   left:-100px;
   z-index:-1;
+}
+
+/* ===== ฟ้อนต์หัวข้อ ===== */
+h1, h2, .navbar{
+  font-family:'Mali', cursive;
 }
 
 /* ===== NAVBAR ===== */
@@ -81,7 +88,7 @@ h1{
   backdrop-filter:blur(10px);
   text-decoration:none;
   color:#ff4fa3;
-  font-weight:600;
+  font-weight:500;
   box-shadow:
     0 4px 12px rgba(0,0,0,0.12),
     inset 0 1px 1px rgba(255,255,255,0.7);
@@ -135,26 +142,11 @@ h1{
 
 .product-card h3{
   color:#ff4fa3;
+  font-family:'Mali', cursive;
 }
 
 .price{
   color:#666;
-}
-
-/* ===== รีวิว ===== */
-.review-title{
-  color:#ff4fa3;
-  margin-top:30px;
-}
-
-.review{
-  background:white;
-  padding:15px;
-  margin:12px 0;
-  border-radius:18px;
-  box-shadow:0 6px 15px rgba(0,0,0,0.08);
-  text-align:left;
-  font-size:14px;
 }
 
 /* ===== FOOTER ===== */
@@ -222,7 +214,6 @@ h1{
 <a class="button" href="https://www.facebook.com/share/189hpW8MGC">Facebook</a>
 <a class="button" href="#">LINE</a>
 
-<!-- ⭐ FOOTER -->
 <div class="footer">
 © 2026 Candy Shop 🍭
 <br>
