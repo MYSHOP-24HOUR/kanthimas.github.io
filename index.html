@@ -71,7 +71,7 @@ h1{
   margin-bottom:20px;
 }
 
-/* ===== ปุ่ม iPhone ===== */
+/* ===== ปุ่ม ===== */
 .button{
   display:block;
   margin:14px 0;
@@ -96,7 +96,7 @@ h1{
   transform:scale(0.95);
 }
 
-/* ===== การ์ดสินค้าเลื่อน ===== */
+/* ===== การ์ดสินค้า ===== */
 .product-scroll{
   display:flex;
   overflow-x:auto;
@@ -109,13 +109,11 @@ h1{
   display:none;
 }
 
-/* ⭐ ลิงก์ครอบการ์ด */
 .card-link{
   text-decoration:none;
   color:inherit;
 }
 
-/* ===== การ์ดสินค้า ===== */
 .product-card{
   min-width:220px;
   background:white;
@@ -124,15 +122,10 @@ h1{
   box-shadow:0 8px 20px rgba(0,0,0,0.12);
   scroll-snap-align:center;
   transition:0.25s;
-  cursor:pointer;
 }
 
 .product-card:hover{
   transform:translateY(-3px);
-}
-
-.product-card:active{
-  transform:scale(0.96);
 }
 
 .product-card img{
@@ -142,12 +135,38 @@ h1{
 
 .product-card h3{
   color:#ff4fa3;
-  margin:10px 0 5px;
 }
 
 .price{
   color:#666;
-  font-weight:500;
+}
+
+/* ===== รีวิว ===== */
+.review-title{
+  color:#ff4fa3;
+  margin-top:30px;
+}
+
+.review{
+  background:white;
+  padding:15px;
+  margin:12px 0;
+  border-radius:18px;
+  box-shadow:0 6px 15px rgba(0,0,0,0.08);
+  text-align:left;
+  font-size:14px;
+}
+
+/* ===== FOOTER ===== */
+.footer{
+  margin-top:40px;
+  padding:25px;
+  font-size:14px;
+  color:#888;
+  background:rgba(255,255,255,0.6);
+  backdrop-filter:blur(10px);
+  border-top:1px solid rgba(0,0,0,0.05);
+  border-radius:25px 25px 0 0;
 }
 
 </style>
@@ -155,7 +174,6 @@ h1{
 
 <body>
 
-<!-- ===== NAVBAR ===== -->
 <div class="navbar">
 🍭 Candy Shop
 </div>
@@ -166,62 +184,65 @@ h1{
 
 <h1>เลือกซื้อ</h1>
 
-<a class="button" href="product1.html">
-🫧 เติมเกมต่างๆ
-</a>
-
-<a class="button" href="product2.html">
-🎀 รหัสเกม
-</a>
-  
-  <a class="button" href="product3.html">
-🪽 แอพพรีเมี่ยม
-</a>
+<a class="button" href="product1.html">🫧 เติมเกมต่างๆ</a>
+<a class="button" href="product2.html">🎀 รหัสเกม</a>
+<a class="button" href="product3.html">🪽 แอพพรีเมี่ยม</a>
 
 <h2 style="color:#ff4fa3;">สินค้าแนะนำ ✨</h2>
 
 <div class="product-scroll">
 
-  <!-- ⭐ สินค้า 1 -->
-  <a href="product1.html" class="card-link">
-    <div class="product-card">
-      <img src="663BD7F6-F626-4873-BCE0-819856CFC4B8.jpeg">
-      <h3>เติมโรบัค</h3>
-      <p class="price">1โรบัค199฿</p>
-    </div>
-  </a>
+<a href="product1.html" class="card-link">
+<div class="product-card">
+<img src="663BD7F6-F626-4873-BCE0-819856CFC4B8.jpeg">
+<h3>เติมโรบัค</h3>
+<p class="price">1โรบัค199฿</p>
+</div>
+</a>
 
-  <!-- ⭐ สินค้า 2 -->
-  <a href="product2.html" class="card-link">
-    <div class="product-card">
-      <img src="663BD7F6-F626-4873-BCE0-819856CFC4B8.jpeg">
-      <h3>รหัสโรบอค</h3>
-      <p class="price">259฿</p>
-    </div>
-  </a>
+<a href="product2.html" class="card-link">
+<div class="product-card">
+<img src="663BD7F6-F626-4873-BCE0-819856CFC4B8.jpeg">
+<h3>รหัสโรบอค</h3>
+<p class="price">259฿</p>
+</div>
+</a>
 
-  <!-- ⭐ สินค้า 3 -->
-  <a href="product3.html" class="card-link">
-    <div class="product-card">
-      <img src="663BD7F6-F626-4873-BCE0-819856CFC4B8.jpeg">
-      <h3>เน็ตฟริก</h3>
-      <p class="price">299฿</p>
-    </div>
-  </a>
+<a href="product3.html" class="card-link">
+<div class="product-card">
+<img src="663BD7F6-F626-4873-BCE0-819856CFC4B8.jpeg">
+<h3>เน็ตฟริก</h3>
+<p class="price">299฿</p>
+</div>
+</a>
 
 </div>
 
-<a class="button" href="https://www.instagram.com/vxzue.m">
- Instagram
-</a>
+<!-- ⭐ รีวิวลูกค้า -->
+<h2 class="review-title">รีวิวลูกค้า 💬</h2>
 
-<a class="button" href="https://www.facebook.com/share/189hpW8MGC">
- Facebook
-</a>
+<div class="review">
+⭐⭐⭐⭐⭐ เติมเร็วมาก แอดมินตอบไว ได้ของจริง 💖
+</div>
 
-<a class="button" href="#">
- LINE
-</a>
+<div class="review">
+⭐⭐⭐⭐⭐ ซื้อหลายรอบแล้ว ราคาน่ารัก ส่งไวสุดๆ
+</div>
+
+<div class="review">
+⭐⭐⭐⭐⭐ ร้านน่าเชื่อถือ มือใหม่ก็สั่งได้ง่าย ✨
+</div>
+
+<a class="button" href="https://www.instagram.com/vxzue.m">Instagram</a>
+<a class="button" href="https://www.facebook.com/share/189hpW8MGC">Facebook</a>
+<a class="button" href="#">LINE</a>
+
+<!-- ⭐ FOOTER -->
+<div class="footer">
+© 2026 Candy Shop 🍭
+<br>
+ร้านค้าออนไลน์ปลอดภัย
+</div>
 
 </div>
 
