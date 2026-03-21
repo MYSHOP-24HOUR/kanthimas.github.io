@@ -6,13 +6,17 @@
 
 <title>สินค้า</title>
 
+<!-- ✅ โหลดฟ้อน Mali + Kanit -->
+<link href="https://fonts.googleapis.com/css2?family=Mali:wght@400;600&family=Kanit:wght@300;400;500;600&display=swap" rel="stylesheet">
+
 <style>
 
 body{
   margin:0;
   background:#ffd6ec;
-  font-family:-apple-system,BlinkMacSystemFont,
-  "Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+
+  /* ✅ เนื้อหาใช้ Kanit */
+  font-family:'Kanit', sans-serif;
   text-align:center;
 }
 
@@ -22,8 +26,15 @@ body{
   padding:30px 20px;
 }
 
+/* ✅ หัวข้อใช้ Mali */
 h1{
   color:#ff4fa3;
+  font-family:'Mali', cursive;
+}
+
+h3{
+  font-family:'Mali', cursive;
+  color:#ff6bb5;
 }
 
 /* ===== กล่องสินค้า ===== */
@@ -43,6 +54,7 @@ h1{
 .desc{
   margin-top:10px;
   color:#444;
+  font-weight:400;
 }
 
 /* ===== ปุ่ม ===== */
@@ -54,8 +66,11 @@ h1{
   background:white;
   text-decoration:none;
   color:#ff4fa3;
-  font-weight:600;
+  font-weight:500;
   box-shadow:0 6px 15px rgba(0,0,0,0.1);
+
+  /* ปุ่มอ่านง่ายใช้ Kanit */
+  font-family:'Kanit', sans-serif;
 }
 
 .button:active{
@@ -69,26 +84,26 @@ h1{
 
 <div class="container">
 
-<h1>แอพพรีเมี่ยม</h1>
+<h1>เติมเกม</h1>
 
 <!-- ===== สินค้า 1 ===== -->
 <div class="product-card">
   <img class="product-img" src="663BD7F6-F626-4873-BCE0-819856CFC4B8.jpeg?v=2">
-  <h3>ดิสนี่</h3>
-  <p class="desc">ราคา 199฿ / รายละเอียดสินค้า</p>
+  <h3>Netflix</h3>
+  <p class="desc">ราคา 299฿ / รายละเอียดสินค้า</p>
 </div>
 
 <!-- ===== สินค้า 2 ===== -->
 <div class="product-card">
   <img class="product-img" src="663BD7F6-F626-4873-BCE0-819856CFC4B8.jpeg?v=2">
-  <h3>เน็ตฟริก</h3>
+  <h3>viu</h3>
   <p class="desc">ราคา 259฿ / รายละเอียดสินค้า</p>
 </div>
 
 <!-- ===== สินค้า 3 ===== -->
 <div class="product-card">
   <img class="product-img" src="663BD7F6-F626-4873-BCE0-819856CFC4B8.jpeg?v=2">
-  <h3>แอปจีน 3</h3>
+  <h3>Disney+</h3>
   <p class="desc">ราคา 299฿ / รายละเอียดสินค้า</p>
 </div>
 
