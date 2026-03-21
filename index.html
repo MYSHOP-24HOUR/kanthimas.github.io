@@ -89,33 +89,28 @@ h1{
   color:#ff4fa3;
 }
 
-/* ===== ปุ่ม Candy Gradient ===== */
+/* ===== ปุ่มแบบเดิม (Glass Style) ===== */
 .button{
   display:block;
   margin:14px 0;
   padding:16px;
-  border-radius:24px;
+  border-radius:22px;
   text-decoration:none;
-  color:white;
+  color:#ff4fa3;
   font-weight:500;
 
-  background:linear-gradient(
-    135deg,
-    #ff7ac6,
-    #ff4fa3,
-    #ff9ed1
-  );
+  background:rgba(255,255,255,0.85);
+  backdrop-filter:blur(10px);
 
   box-shadow:
-    0 6px 18px rgba(255,79,163,.35),
-    inset 0 1px 1px rgba(255,255,255,.5);
+    0 4px 12px rgba(0,0,0,0.12),
+    inset 0 1px 1px rgba(255,255,255,0.7);
 
   transition:.25s;
 }
 
 .button:hover{
-  transform:translateY(-3px);
-  box-shadow:0 10px 22px rgba(255,79,163,.45);
+  transform:translateY(-2px);
 }
 
 .button:active{
@@ -141,17 +136,14 @@ h1{
   color:inherit;
 }
 
-/* ===== การ์ดสินค้า PRO ===== */
+/* ===== การ์ดสินค้า ===== */
 .product-card{
   min-width:230px;
   background:white;
   border-radius:24px;
   padding:15px;
   scroll-snap-align:center;
-
-  box-shadow:
-    0 10px 25px rgba(0,0,0,.12);
-
+  box-shadow:0 10px 25px rgba(0,0,0,.12);
   transition:.3s;
 }
 
@@ -175,7 +167,6 @@ h1{
   font-family:'Mali',cursive;
 }
 
-/* ราคาเด่น */
 .price{
   color:#555;
   font-weight:600;
